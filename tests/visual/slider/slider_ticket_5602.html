@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Slider Visual Test : Slider ticket #5602</title>
+	<link rel="stylesheet" href="../visual.css" type="text/css" />
+	<link rel="stylesheet" href="../../../themes/base/jquery.ui.all.css" type="text/css">
+	<script type="text/javascript" src="../../../jquery-1.4.2.js"></script>
+	<script type="text/javascript" src="../../../ui/jquery.ui.core.js"></script>
+	<script type="text/javascript" src="../../../ui/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="../../../ui/jquery.ui.mouse.js"></script>
+	<script type="text/javascript" src="../../../ui/jquery.ui.slider.js"></script>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#slider").slider();
+	    });
+	</script>
+</head>
+<body>
+
+<h1 class="ui-widget-header"><a href="http://dev.jqueryui.com/ticket/5602">#5602 - Slider Does Not Exhibit Proper Behavior When Switching Range</a></h1>
+
+<div id="slider"></div>
+
+<p>Set range option to:</p>
+
+<ul>
+	<li><a href="javascript:$('#slider').slider('option','range',false)">False</a></li>
+	<li><a href="javascript:$('#slider').slider('option','range','min')">"Min"</a></li>
+	<li><a href="javascript:$('#slider').slider('option','range','max')">"Max"</a></li>
+	<li><a href="javascript:$('#slider').slider('option','range',true)">True</a></li>
+</ul>
+
+</body>
+</html>
