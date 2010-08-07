@@ -391,7 +391,7 @@ $.widget( "ui.slider", $.ui.mouse, {
 				this._refreshRange();
 				this._refreshHandles();
 				this._refreshValue();
-				this._animateOn = true;
+				this._animateOff = false;
 				break;
 			case "value":
 				this._animateOff = true;
